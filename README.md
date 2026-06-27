@@ -66,8 +66,13 @@ I reviewed the project's design documentation, compared it against the existing 
 
 ### Code Highlight
 
-<img width="511" height="213" alt="image" src="https://github.com/user-attachments/assets/70c4eeaf-24e8-4929-bed3-9968ce4f2b4a" />
-
+.rental-history-card {
+    max-width: 800px;
+    margin: 25px auto;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000;
+}
 
 ### Final Result
 
