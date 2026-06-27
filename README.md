@@ -49,13 +49,13 @@ Because TheatreCMS is a shared application, styling changes had to be made caref
 
 I reviewed the project's design documentation, compared it against the existing implementation, and updated the appropriate CSS rules until the page closely matched the expected layout. Throughout development, I continuously tested the page to verify that the styling changes were isolated to the sign-in page.
 
-### Technologies Used
+### 🛠️ Technologies Used
 
 - HTML
 - CSS
 - Bootstrap
 
-### Skills Demonstrated
+### Technical Skills Applied
 
 - Reading and understanding an existing codebase
 - CSS layout and styling
