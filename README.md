@@ -74,6 +74,9 @@ I reviewed the project's design documentation, compared it against the existing 
     color: #000;
 }
 ```
+
+This reusable CSS class established the foundation for the Rental History page layout by creating a centered, responsive card with improved spacing and visual consistency. These styling updates helped align the page with the project's design requirements while keeping the implementation reusable across the feature.
+
 ### Final Result
 
 The completed sign-in page matched the project's design specifications while maintaining the application's existing functionality.
