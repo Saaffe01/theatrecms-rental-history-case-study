@@ -128,7 +128,13 @@ I implemented the Rental History model using ASP.NET MVC and Entity Framework co
 
 ### Code Highlight
 
-*(RentalHistory model and CRUD scaffold snippets will be added here.)*
+.rental-history-card {
+    max-width: 800px;
+    margin: 25px auto;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000;
+}
 
 ### Final Result
 
