@@ -27,8 +27,6 @@ Throughout these stories, I gained experience working with:
 - Azure DevOps
 - Agile/Scrum Development
 
-
-
 ## Stories Completed
 
 *The following sections document each feature I completed during the project.*
@@ -68,7 +66,8 @@ I reviewed the project's design documentation, compared it against the existing 
 
 ### Code Highlight
 
-*(CSS snippet will be added here.)*
+<img width="511" height="213" alt="image" src="https://github.com/user-attachments/assets/70c4eeaf-24e8-4929-bed3-9968ce4f2b4a" />
+
 
 ### Final Result
 
