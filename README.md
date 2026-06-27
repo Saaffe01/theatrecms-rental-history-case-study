@@ -31,7 +31,6 @@ Throughout these stories, I gained experience working with:
 
 *The following sections document each feature I completed during the project.*
 
-
 **Azure DevOps Work Item:** #20169
 
 ### Objective
@@ -66,6 +65,7 @@ I reviewed the project's design documentation, compared it against the existing 
 
 ### Code Highlight
 
+```css
 .rental-history-card {
     max-width: 800px;
     margin: 25px auto;
@@ -73,7 +73,7 @@ I reviewed the project's design documentation, compared it against the existing 
     background-color: #fff;
     color: #000;
 }
-
+```
 ### Final Result
 
 The completed sign-in page matched the project's design specifications while maintaining the application's existing functionality.
