@@ -334,13 +334,24 @@ I updated the existing JavaScript and jQuery configuration to remove the DataTab
 
 ### Code Highlight
 
-*(JavaScript and jQuery snippets will be added here.)*
+```cshtml
+<div class="form-inline">
+    <label for="rentalHistorySort" class="mr-2 mb-0">Sorted by:</label>
+
+    <select id="rentalHistorySort" class="form-control">
+        <option value="none">No Extra Sorting...</option>
+        <option value="damaged">Damaged Rentals</option>
+        <option value="undamaged">Undamaged Rentals</option>
+        <option value="az">Rentals A - Z</option>
+        <option value="za">Rentals Z - A</option>
+    </select>
+</div>
+```
+This Razor view introduces a custom sorting interface that gives users multiple ways to organize Rental History records without relying on the default DataTables controls. By replacing the plugin's built-in sorting UI with a custom Bootstrap form, the page remains consistent with the application's design while providing a clearer and more intuitive user experience.
 
 ### Final Result
 
 The Rental History table now matches the project's design specifications by removing the default DataTables sorting controls while preserving the existing functionality and user experience.
-
-*(Screenshot of the completed Rental History table will be added here.)*
 
 ### What I Learned
 
