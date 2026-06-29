@@ -150,8 +150,6 @@ This model defined the structure of the Rental History entity and served as the 
 
 The Rental History entity was successfully integrated into the application, providing a functional CRUD workflow that served as the foundation for future enhancements throughout the Rental History module.
 
-*(Screenshot of the Rental History CRUD pages will be added here.)*
-
 ### What I Learned
 
 Before this feature, I understood the basic concepts of MVC, but implementing a new entity helped me see how each layer of the application worked together. Watching the model, controller, views, and database interact gave me a much clearer understanding of how ASP.NET MVC applications are structured.
@@ -265,14 +263,19 @@ After implementing the changes, I verified that the page displayed the correct i
 - Reading an Existing Codebase
 
 ### Code Highlight
-
-*(Controller logic and updated Razor view snippets will be added here.)*
+```
+<div class="form-group">
+    @Html.LabelFor(model => model.RenterName)
+    @Html.EditorFor(model => model.RenterName)
+    @Html.ValidationMessageFor(model => model.RenterName)
+</div>
+```
+This Razor view uses ASP.NET MVC HTML Helpers to generate form elements that are automatically bound to the Rental History model. Using strongly typed helpers ensures that labels, inputs, validation messages, and model binding remain synchronized, improving maintainability while reducing repetitive HTML.
 
 ### Final Result
 
 The Rental History Index page was successfully redesigned using a responsive Bootstrap card layout while preserving existing functionality. Records were displayed in a cleaner, more organized format, and controller logic was updated to return the most recent rental history entries first.
 
-*(Screenshot of the completed Rental History Index page will be added here.)*
 
 ### What I Learned
 
