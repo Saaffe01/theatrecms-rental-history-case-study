@@ -200,14 +200,18 @@ I updated the Razor views while preserving the existing MVC workflow. After impl
 - MVC Architecture
 
 ### Code Highlight
-
-*(Create/Edit Razor view snippets will be added here.)*
+```
+<div class="form-group">
+    @Html.LabelFor(model => model.RenterName)
+    @Html.EditorFor(model => model.RenterName)
+    @Html.ValidationMessageFor(model => model.RenterName)
+</div>
+```
+This Razor view uses ASP.NET MVC HTML Helpers to generate form elements that are automatically bound to the Rental History model. Using strongly typed helpers ensures that labels, inputs, validation messages, and model binding remain synchronized, improving maintainability while reducing repetitive HTML.
 
 ### Final Result
 
 The Create and Edit pages were successfully updated to provide a cleaner and more user-friendly interface while maintaining full compatibility with the existing Rental History workflow.
-
-*(Screenshot of the completed Create/Edit pages will be added here.)*
 
 ### What I Learned
 
@@ -263,14 +267,7 @@ After implementing the changes, I verified that the page displayed the correct i
 - Reading an Existing Codebase
 
 ### Code Highlight
-```
-<div class="form-group">
-    @Html.LabelFor(model => model.RenterName)
-    @Html.EditorFor(model => model.RenterName)
-    @Html.ValidationMessageFor(model => model.RenterName)
-</div>
-```
-This Razor view uses ASP.NET MVC HTML Helpers to generate form elements that are automatically bound to the Rental History model. Using strongly typed helpers ensures that labels, inputs, validation messages, and model binding remain synchronized, improving maintainability while reducing repetitive HTML.
+
 
 ### Final Result
 
