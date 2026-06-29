@@ -131,13 +131,17 @@ I implemented the Rental History model using ASP.NET MVC and Entity Framework co
 
 ### Code Highlight
 
-.rental-history-card {
-    max-width: 800px;
-    margin: 25px auto;
-    border-radius: 15px;
-    background-color: #fff;
-    color: #000;
+```public class RentalHistory
+{
+    public int RentalHistoryId { get; set; }
+
+    public string RenterName { get; set; }
+
+    public DateTime DateRented { get; set; }
+
+    public DateTime DateReturned { get; set; }
 }
+```
 
 ### Final Result
 
