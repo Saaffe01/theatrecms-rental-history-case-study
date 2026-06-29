@@ -347,6 +347,22 @@ I updated the existing JavaScript and jQuery configuration to remove the DataTab
     </select>
 </div>
 ```
+```switch (sortOption)
+{
+    case "damaged":
+        ...
+        break;
+
+    case "az":
+        ...
+        break;
+
+    case "za":
+        ...
+        break;
+}
+```
+
 This Razor view introduces a custom sorting interface that gives users multiple ways to organize Rental History records without relying on the default DataTables controls. By replacing the plugin's built-in sorting UI with a custom Bootstrap form, the page remains consistent with the application's design while providing a clearer and more intuitive user experience.
 
 ### Final Result
