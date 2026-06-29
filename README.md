@@ -131,7 +131,8 @@ I implemented the Rental History model using ASP.NET MVC and Entity Framework co
 
 ### Code Highlight
 
-```public class RentalHistory
+```csharp
+public class RentalHistory
 {
     public int RentalHistoryId { get; set; }
 
@@ -142,6 +143,8 @@ I implemented the Rental History model using ASP.NET MVC and Entity Framework co
     public DateTime DateReturned { get; set; }
 }
 ```
+
+This model defined the structure of the Rental History entity and served as the foundation for the feature's CRUD operations. Following Entity Framework conventions allowed the model to integrate seamlessly with the application's controllers, views, and database.
 
 ### Final Result
 
