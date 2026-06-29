@@ -347,23 +347,31 @@ I updated the existing JavaScript and jQuery configuration to remove the DataTab
     </select>
 </div>
 ```
-```switch (sortOption)
+
+```
+switch (sortOption)
 {
     case "damaged":
-        ...
+        rentalHistory = rentalHistory
+            .Where(r => r.RentalDamaged)
+            .ToList();
         break;
 
     case "az":
-        ...
+        rentalHistory = rentalHistory
+            .OrderBy(r => r.RenterName)
+            .ToList();
         break;
 
     case "za":
-        ...
+        rentalHistory = rentalHistory
+            .OrderByDescending(r => r.RenterName)
+            .ToList();
         break;
 }
 ```
 
-This Razor view introduces a custom sorting interface that gives users multiple ways to organize Rental History records without relying on the default DataTables controls. By replacing the plugin's built-in sorting UI with a custom Bootstrap form, the page remains consistent with the application's design while providing a clearer and more intuitive user experience.
+This Razor view introduces a custom sorting interface that replaces the default DataTables controls with a cleaner, application-specific experience. The custom Bootstrap form allows users to organize Rental History records while maintaining consistency with the application's overall design and preserving the existing MVC workflow.
 
 ### Final Result
 
