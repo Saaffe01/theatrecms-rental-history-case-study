@@ -207,7 +207,7 @@ I updated the Razor views while preserving the existing MVC workflow. After impl
     @Html.ValidationMessageFor(model => model.RenterName)
 </div>
 ```
-This Razor view uses ASP.NET MVC HTML Helpers to generate form elements that are automatically bound to the Rental History model. Using strongly typed helpers ensures that labels, inputs, validation messages, and model binding remain synchronized, improving maintainability while reducing repetitive HTML.
+This Razor view uses ASP.NET MVC HTML Helpers to generate form elements that are automatically bound to the Rental History model. Using strongly typed helpers ensures that labels, inputs, validation messages, and model binding remain synchronized with the underlying model, improving maintainability while reducing repetitive HTML.
 
 ### Final Result
 
@@ -266,8 +266,13 @@ After implementing the changes, I verified that the page displayed the correct i
 - Separation of Concerns
 - Reading an Existing Codebase
 
-### Code Highlight
-
+### Featured implementation 
+```
+var rentalHistory = db.RentalHistories
+    .OrderByDescending(r => r.DateRented)
+    .ToList();
+```
+This controller prepares the Rental History data before it reaches the Razor view by ordering records from newest to oldest. Performing this work in the controller follows MVC best practices by separating data preparation from presentation, resulting in cleaner and more maintainable code.
 
 ### Final Result
 
