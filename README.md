@@ -81,7 +81,6 @@ This reusable CSS class established the foundation for the Rental History page l
 
 The completed sign-in page matched the project's design specifications while maintaining the application's existing functionality.
 
-*(Screenshot of the completed sign-in page will be added here.)*
 
 ### What I Learned
 
@@ -417,3 +416,4 @@ TheatreCMS gave me valuable experience working within an existing application ra
 Most importantly, this project reinforced that software development is about much more than writing code. It requires communication, problem-solving, attention to detail, and a willingness to continuously learn from each feature you implement.
 
 As I move into the next stage of my career, I look forward to contributing these skills to a professional development team while continuing to grow as a software engineer.
+
